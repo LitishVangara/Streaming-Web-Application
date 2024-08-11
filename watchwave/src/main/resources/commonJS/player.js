@@ -148,7 +148,7 @@ video.addEventListener("timeupdate", () => {
     currentTimeElement.innerHTML = "";
     currentTimeElement.innerHTML = getTimeStamp(video.currentTime);
     pcnt = parseInt(seekBar.value)+pcnt;
-    seekBar.style.background = `linear-gradient(to right, #d6336c 0%, #d6336c ${seekBar.value}% ,#fcc2d7 ${seekBar.value}%,#fcc2d7 ${pcnt}%,#f8f9fa ${pcnt}%, #f8f9fa 100%)`;
+    seekBar.style.background = `linear-gradient(to right, #e03131 0%, #e03131 ${seekBar.value}% , #ff8787 ${seekBar.value}%, #ff8787 ${pcnt}%, #f8f9fa ${pcnt}%, #f8f9fa 100%)`;
 });
 
 seekBar.addEventListener("input", () => {
@@ -158,7 +158,7 @@ seekBar.addEventListener("input", () => {
     bufferedTill = bufferedTill - video.currentTime;
     let pcnt = (bufferedTill / video.duration) * 100;
     pcnt = parseInt(seekBar.value)+pcnt;
-    seekBar.style.background = `linear-gradient(to right, #d6336c 0%, #d6336c ${seekBar.value}% ,#fcc2d7 ${seekBar.value}%,#fcc2d7 ${pcnt}%,#f8f9fa ${pcnt}%, #f8f9fa 100%)`;
+    seekBar.style.background = `linear-gradient(to right, #e03131 0%, #e03131 ${seekBar.value}% , #ff8787 ${seekBar.value}%, #ff8787 ${pcnt}%, #f8f9fa ${pcnt}%, #f8f9fa 100%)`;
 });
 
 muteButton.addEventListener("click", () => {
